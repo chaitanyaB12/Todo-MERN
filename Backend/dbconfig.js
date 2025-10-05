@@ -1,7 +1,7 @@
 import { MongoClient } from "mongodb";
 
-const url="mongodb+srv://Crb:lw4NBYJnfqR7OYdC@cluster0.pezziiv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-const dbName="node-project";
+const url=process.env.MONGO_URL;
+const dbName=process.env.DB_NAME;
 
 export const collectionName="todo";
 const client = new MongoClient(url);
