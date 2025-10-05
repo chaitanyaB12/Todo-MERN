@@ -23,7 +23,7 @@ Backend: Node.js, Express.js, MongoDB (native driver), JWT, dotenv
 Tools: nodemon for backend development, Git for version control.
 
 Project Structre
-
+```
 TodoFullStack/
 ├── Backend/
 │   ├── index.js
@@ -44,7 +44,7 @@ TodoFullStack/
 │   └── node_modules/
 ├── .gitignore
 └── README.md
-
+```
 
 
 Setup Instructions
