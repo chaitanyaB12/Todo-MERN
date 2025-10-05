@@ -79,7 +79,7 @@ npm run dev
 
 
 Important Notes
-Make sure to keep the .env file secure and never commit it to version control.
+Make sure to keep th .env file secure and never commit it to version control.
 
 Change the JWT secret and MongoDB connection string to your own credentials.
 
