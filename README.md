@@ -1,0 +1,92 @@
+## This is a full stack Todo application built with the MERN stack: MongoDB, Express.js, React, and Node.js. It allows users to sign up, log in, and manage their todo tasks including adding, updating, deleting, and viewing tasks. User authentication is implemented using JWT secured with environment variables for enhanced security.
+
+## Features
+
+1) User signup and login with JWT authentication
+
+2) Create, view, update, and delete tasks
+
+3) Delete multiple tasks at once
+
+4) Secure API routes protected with JWT middleware
+
+5) Environment variables to store secrets like MongoDB URL and JWT secret
+
+6) CORS configured to allow frontend-backend communication
+
+7) Cookie-based token storage with HTTP-only and secure flags
+
+## Tech Stack
+Frontend: React, React Router, Tailwind CSS
+
+Backend: Node.js, Express.js, MongoDB (native driver), JWT, dotenv
+
+Tools: nodemon for backend development, Git for version control.
+
+## Project Structre
+```
+TodoFullStack/
+├── Backend/
+│   ├── index.js
+│   ├── dbconfig.js
+│   ├── .env
+│   ├── package.json
+│   └── node_modules/
+├── Frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── AddTask.jsx
+│   │   │   ├── List.jsx
+│   │   │   ├── Login.jsx
+│   │   │   └── ...
+│   │   ├── App.jsx
+│   │   └── index.js
+│   ├── package.json
+│   └── node_modules/
+├── .gitignore
+└── README.md
+```
+
+
+## Setup Instructions
+
+## Backend
+
+1. Navigate to the backend folder: 
+cd Backend
+
+2. install dependencies  : 
+ npm install
+
+3. Create a .env file in the Backend folder and add : 
+MONGO_URL, JWT_SECRET, FRONTEND_URL, DB_NAME
+
+4. Start the backend server : 
+nodemon index.js
+
+
+## Frontend
+
+1. Navigate to the frontend folder:
+cd Frontend
+
+2. Install dependencies:
+npm install
+
+3. Start the frontend server:
+npm run dev
+
+
+## Important Notes
+1) Make sure to keep the .env file secure and never commit it to version control.
+
+2) Change the JWT secret and MongoDB connection string to your own credentials.
+
+3) Update FRONTEND_URL accordingly for deployment.
+
+4) Use nodemon for automatic backend restarts during development.
+
+## License
+This project is open-source and available under the MIT License.
+
+Made and created by Chaitanya.
