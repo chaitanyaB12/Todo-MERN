@@ -1,4 +1,4 @@
-# This is a full stack Todo application built with the MERN stack: MongoDB, Express.js, React, and Node.js. It allows users to sign up, log in, and manage their todo tasks including adding, updating, deleting, and viewing tasks. User authentication is implemented using JWT secured with environment variables for enhanced security.
+## This is a full stack Todo application built with the MERN stack: MongoDB, Express.js, React, and Node.js. It allows users to sign up, log in, and manage their todo tasks including adding, updating, deleting, and viewing tasks. User authentication is implemented using JWT secured with environment variables for enhanced security.
 
 ## Features
 User signup and login with JWT authentication
