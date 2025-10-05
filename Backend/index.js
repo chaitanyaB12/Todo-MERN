@@ -28,7 +28,7 @@ app.post("/login", async (req, res) => {
       password: userData.password,
     });
     if (result) {
-      jwt.sign(userData, "Google", { expiresIn: "5d" }, (error, token) => {
+      jwt.sign(userData, process.env.JWT_PWD, { expiresIn: "5d" }, (error, token) => {
         res.send({
           success: true,
           msg: "Login Done",
@@ -58,7 +58,7 @@ app.post("/signup", async (req, res) => {
     const collection = await db.collection("users");
     const result = await collection.insertOne(userData);
     if (result) {
-      jwt.sign(userData, "Google", { expiresIn: "5d" }, (error, token) => {
+      jwt.sign(userData, process.env.JWT_PWD, { expiresIn: "5d" }, (error, token) => {
         res.send({
           success: true,
           msg: "SignUp Done",
@@ -149,7 +149,7 @@ app.delete("/delete-multiple", verifyJWTToken, async (req, res) => {
 function verifyJWTToken(req, res, next) {
   //console.log("cookie test",req.cookies['token'] )
   const token = req.cookies["token"];
-  jwt.verify(token, "Google", (error, decoded) => {
+  jwt.verify(token, process.env.JWT_PWD, (error, decoded) => {
     if (error) {
       return res.send({
         msg: "invalid Token",
