@@ -25,24 +25,26 @@ Tools: nodemon for backend development, Git for version control.
 Project Structre
 
 TodoFullStack/
-│
 ├── Backend/
-│   ├── index.js                  # Express server and API routes
-│   ├── dbconfig.js               # MongoDB connection setup
-│   ├── .env                      # Environment variables (not committed)
+│   ├── index.js
+│   ├── dbconfig.js
+│   ├── .env
 │   ├── package.json
 │   └── node_modules/
-│
 ├── Frontend/
 │   ├── src/
-│   │   ├── components/           # React components (AddTask, List, Login, SignUp, etc.)
+│   │   ├── components/
+│   │   │   ├── AddTask.jsx
+│   │   │   ├── List.jsx
+│   │   │   ├── Login.jsx
+│   │   │   └── ...
 │   │   ├── App.jsx
 │   │   └── index.js
 │   ├── package.json
 │   └── node_modules/
-│
-├── .gitignore                    # To ignore node_modules, env files, build folders
+├── .gitignore
 └── README.md
+
 
 
 Setup Instructions
