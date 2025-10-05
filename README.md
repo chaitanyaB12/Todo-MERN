@@ -59,10 +59,7 @@ cd Backend
  npm install
 
 3. Create a .env file in the Backend folder and add : 
-``MONGO_URL=your_mongodb_connection_string``
-``JWT_SECRET=your_jwt_secret_key``
-``FRONTEND_URL=http://localhost:5173``
-``DB_NAME=node-project``
+MONGO_URL, JWT_SECRET, FRONTEND_URL, DB_NAME
 
 4. Start the backend server : 
 nodemon index.js
