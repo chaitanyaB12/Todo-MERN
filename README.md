@@ -1,30 +1,29 @@
 ## This is a full stack Todo application built with the MERN stack: MongoDB, Express.js, React, and Node.js. It allows users to sign up, log in, and manage their todo tasks including adding, updating, deleting, and viewing tasks. User authentication is implemented using JWT secured with environment variables for enhanced security.
 
 ## Features
-```
-User signup and login with JWT authentication
 
-Create, view, update, and delete tasks
+1) User signup and login with JWT authentication
 
-Delete multiple tasks at once
+2) Create, view, update, and delete tasks
 
-Secure API routes protected with JWT middleware
+3) Delete multiple tasks at once
 
-Environment variables to store secrets like MongoDB URL and JWT secret
+4) Secure API routes protected with JWT middleware
 
-CORS configured to allow frontend-backend communication
+5) Environment variables to store secrets like MongoDB URL and JWT secret
 
-Cookie-based token storage with HTTP-only and secure flags
+6) CORS configured to allow frontend-backend communication
 
-Tech Stack
+7) Cookie-based token storage with HTTP-only and secure flags
+
+## Tech Stack
 Frontend: React, React Router, Tailwind CSS
 
 Backend: Node.js, Express.js, MongoDB (native driver), JWT, dotenv
 
 Tools: nodemon for backend development, Git for version control.
-```
 
-Project Structre
+## Project Structre
 ```
 TodoFullStack/
 ├── Backend/
@@ -49,9 +48,9 @@ TodoFullStack/
 ```
 
 
-Setup Instructions
+## Setup Instructions
 
-Backend
+## Backend
 
 1. Navigate to the backend folder: 
 cd Backend
@@ -69,7 +68,7 @@ DB_NAME=node-project
 nodemon index.js
 
 
-Frontend
+## Frontend
 
 1. Navigate to the frontend folder:
 cd Frontend
@@ -81,16 +80,16 @@ npm install
 npm run dev
 
 
-Important Notes
-Make sure to keep the .env file secure and never commit it to version control.
+## Important Notes
+1) Make sure to keep the .env file secure and never commit it to version control.
 
-Change the JWT secret and MongoDB connection string to your own credentials.
+2) Change the JWT secret and MongoDB connection string to your own credentials.
 
-Update FRONTEND_URL accordingly for deployment.
+3) Update FRONTEND_URL accordingly for deployment.
 
-Use nodemon for automatic backend restarts during development.
+4) Use nodemon for automatic backend restarts during development.
 
-License
+## License
 This project is open-source and available under the MIT License.
 
 Made and created by Chaitanya.
